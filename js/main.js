@@ -199,6 +199,27 @@
         }
     });
 
+        // Fetch and insert the header using JavaScript
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+    // Fetch and insert the footer using JavaScript
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+
+        // Fetch and insert the all products page using JavaScript
+        fetch('products.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('products-placeholder').innerHTML = data;
+            });
+
     /*-------------------
 		Quantity change
 	--------------------- */
