@@ -160,12 +160,22 @@
     }
 }
 
+
 .header__logo {
     padding: 15px 0;
-
+    	max-width: auto; /* The logo will scale with the container */
+          height: auto; /* Maintains the aspect ratio */
+          display: block; /* Ensures no extra spacing around the image */
+          margin: 0 auto; /* Centers the image horizontally, if needed */
     a {
         display: inline-block;
     }
+}
+
+@media (max-width: 768px) {
+  .header__logo {
+    width: 50%; /* Adjust the size for smaller screens */
+  }
 }
 
 .header__menu {
